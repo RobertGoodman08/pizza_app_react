@@ -1,27 +1,78 @@
-# React + TypeScript + Vite
+# Сервис заказа еды
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание проекта
 
-Currently, two official plugins are available:
+Этот проект представляет собой веб-приложение для заказа еды.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Развертывание проекта
 
-## Expanding the ESLint configuration
+Чтобы развернуть проект локально, выполните следующие шаги:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Клонируйте репозиторий:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+git clone https://github.com/RobertGoodman08/pizza_app_react.git
+cd pizza_app_react
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Установите зависимости:
+
+```
+npm install
+```
+
+3. Запустите приложение:
+
+```
+npx vite
+```
+
+Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
+
+## Основной функционал
+
+1. **Авторизация и Регистрация:**
+   - В приложении реализованы страницы для входа и регистрации пользователей.
+
+2. **Главная страница с меню:**
+   - Пользователи могут просматривать меню с различными блюдами и их описанием.
+
+3. **Корзина:**
+   - Пользователи могут добавлять выбранные пиццы в корзину.
+
+4. **Редактирование корзины:**
+   - Пользователи имеют возможность изменять количество еды в корзине и удалять еду из неё.
+
+5. **Расчет общей стоимости заказа:**
+   - Автоматически рассчитывает общую стоимость всех выбранных пользователем еду.
+
+6. **Оформление заказа**
+   -
+
+7. **Загрузка данных продукта:**
+   - При переходе на страницу продукта происходит асинхронная загрузка данных с сервера. Если это задерживает, отображается заглушка "Загрузка...".
+
+8. **Обработка ошибок:**
+   - При возникновении ошибки при загрузке данных продукта, пользователь увидят сообщение об ошибке.
+
+9. **Redux-хранилище:**
+    - Применяется Redux для управления состоянием приложения.
+10. **Поиск**
+    - По блюду и составу 
+
+
+## Демонстрация
+
+![Регистрация](![screencapture-localhost-5173-auth-register-2023-10-21-14_53_42](https://github.com/RobertGoodman08/pizza_app_react/assets/77085208/ecbe474a-13c3-4223-aff5-8ab7b9263e18)
+)
+![Авторизация](![screencapture-localhost-5173-auth-login-2023-10-21-14_53_29](https://github.com/RobertGoodman08/pizza_app_react/assets/77085208/de28c112-719b-4d6f-9b6a-f9695063234c)
+)
+![Меню](![screencapture-localhost-5173-2023-10-21-14_52_44](https://github.com/RobertGoodman08/pizza_app_react/assets/77085208/39337ad6-6213-411b-bd96-ebddf01957dd)
+)
+![Корзина](![screencapture-localhost-5173-cart-2023-10-21-14_53_00](https://github.com/RobertGoodman08/pizza_app_react/assets/77085208/fb2d54a4-493b-4119-8d22-4a2e834e6ca2)
+)
+![Продукт](![screencapture-localhostfile-cWvNH5CoGHJqMhgeHEx1sK-React-2-2023-10-21-18_11_16](https://github.com/RobertGoodman08/pizza_app_react/assets/77085208/a12d5d39-d174-489b-a0be-fabbb21c9829)
+)
+![Заказ оформлен](![screencapture-localhost-5173-success-2023-10-21-14_53_11](https://github.com/RobertGoodman08/pizza_app_react/assets/77085208/8ad7931c-8623-4055-81ef-55cf8dc21c3c)
+)
+
