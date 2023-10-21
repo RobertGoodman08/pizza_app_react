@@ -1,0 +1,141 @@
+.head {
+    display: flex;
+    align-items: center;
+}
+
+.button_svg {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 304px;
+    top: 45px;
+    border-radius: 25px;
+    background-color: #D4D6E0;
+
+}
+
+/* Rectangle 105 */
+.button_svg {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 20px rgba(211, 209, 216, 0.3);
+}
+
+/* Path 3391 */
+.button_svg svg path {
+    /* #ffffff */
+    border: 2px solid #111719;
+    border-radius: 25px;
+}
+
+
+
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering horizontally */
+    margin-left: auto;
+    background-color: #FE724C;
+    color: #FFFFFF;
+    height: 43px;
+    width: 143px;
+    top: 43px;
+    border-radius: 15px;
+}
+
+.add-to-cart img {
+    margin-right: 10px; /* Adjust this value to control the spacing between the image and text */
+}
+
+.add-to-cart p {
+    margin: 0; /* Resetting margin for the paragraph element */
+}
+
+.productImage {
+    width: 400px;
+    height: 248px;
+    top: 120px;
+    left: 304px;
+    border-radius: 18px;
+}
+
+.product {
+    margin-top: 50px;
+}
+
+/* ===== */
+
+.productContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productDetails {
+    font-family: 'Open Sans';
+    margin-right: 300px; /* Добавляем отступ справа */
+}
+
+.productImage {
+    width: 400px;
+    height: 248px;
+    border-radius: 18px;
+    margin-left: 100px; /* Добавляем отступ слева */
+}
+
+.productName {
+    font-size: 24px;
+    font-weight: bold;
+    /* Добавьте другие необходимые стили */
+}
+
+.productPrice {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+}
+
+.priceLabel {
+    margin-right: 10px; /* Добавляем отступ справа от "Цена" */
+}
+
+
+
+.priceValue {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-right: 5px;
+}
+
+.currency {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #9796A1;
+}
+
+
+.productRating {
+    font-size: 16px;
+    /* Добавьте другие необходимые стили */
+}
+
+.productIngredients {
+    list-style-type: none;
+    /* Добавьте другие необходимые стили */
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering horizontally */
+    background-color: #FE724C;
+    color: #FFFFFF;
+    height: 43px;
+    width: 143px;
+    border-radius: 15px;
+    margin-top: 20px; /* Add margin as needed */
+}
+
+
