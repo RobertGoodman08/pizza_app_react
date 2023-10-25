@@ -27,7 +27,7 @@ npm install
 npx vite
 ```
 
-Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
+Приложение будет доступно по адресу [http://localhost:5173](http://localhost:5173).
 
 ## Основной функционал
 
